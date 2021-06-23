@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+@font-face {
+  font-family: "Poppins";
+  src: url("./font/Poppins-Regular.ttf");
+}
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1c1c25;
+  min-height: 100vh;
+}
+section::before {
+  content: "";
+  position: absolute;
+  bottom: -40%;
+  left: 50%;
+  width: 60rem;
+  height: 60rem;
+  background: linear-gradient(#f00, #f0f);
+  background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+  border-radius: 50%;
+}
+.card {
+  position: relative;
+  width: 50rem;
+  height: 31.4rem;
+  transform-style: preserve-3d;
+  perspective: 50rem;
+  cursor: pointer;
+}
+.card .face {
+  position: absolute;
+  border-radius: 1rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 1.5rem 3.5rem rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(1rem);
+  transform-style: preserve-3d;
+  transition: 1s;
+  backface-visibility: hidden;
+}
+.card:hover .face.front {
+  transform: rotateY(180deg);
+}
+.card .face.back {
+  transform: rotateY(180deg);
+}
+.card:hover .face.back {
+  transform: rotateY(360deg);
+}
+.card .face.front::before {
+  content: "";
+  position: absolute;
+  bottom: 4rem;
+  right: 4rem;
+  width: 6rem;
+  height: 6rem;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 0.3;
+}
+.card .face.front::after {
+  content: "";
+  position: absolute;
+  bottom: 4rem;
+  right: 8rem;
+  width: 6rem;
+  height: 6rem;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+.card .face.front .debit {
+  position: absolute;
+  left: 4rem;
+  top: 3rem;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+.card .face.front .bank {
+  position: absolute;
+  right: 4rem;
+  top: 2.5rem;
+  color: #fff;
+  font-weight: 800;
+  font-style: italic;
+  font-size: x-large;
+}
+.card .face.front .chip {
+  position: absolute;
+  top: 8rem;
+  left: 5rem;
+  max-width: 6.4rem;
+  transform: rotate(343deg);
+}
+.card .face.front .number {
+  position: absolute;
+  bottom: 12rem;
+  left: 4rem;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 6px;
+  font-size: 1.8rem;
+  text-shadow: 0 2px 1px #0005;
+  font-family: "Orbitron", sans-serif;
+}
+.card .face.front .valid {
+  position: absolute;
+  bottom: 9rem;
+  left: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1em;
+  text-align: right;
+}
+.card .face.front .valid span:last-child {
+  margin-left: 2rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.card .face.front .cardHolder {
+  position: absolute;
+  bottom: 4rem;
+  left: 4rem;
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+}
+/* Back Face Style */
+.card .face.back .blackBar {
+  position: absolute;
+  top: 4rem;
+  width: 100%;
+  height: 6rem;
+  background: #000;
+}
+.card .face.back .ccvTxt {
+  position: absolute;
+  top: 12rem;
+  left: 3rem;
+}
+.card .face.back .ccvTxt h5 {
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+.card .face.back .ccvTxt .whiteBar {
+  position: absolute;
+  width: 40rem;
+  height: 4rem;
+  background-color: #eee;
+  margin-top: 5px;
+}
+.card .face.back .ccvTxt .ccv {
+  position: relative;
+  top: 1rem;
+  left: 39.5rem;
+  background: #ccc;
+  color: #000;
+  width: 4rem;
+  height: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card .face.back .text {
+  position: absolute;
+  bottom: 3rem;
+  left: 3rem;
+  right: 3rem;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.4em;
+  font-weight: 300;
+}

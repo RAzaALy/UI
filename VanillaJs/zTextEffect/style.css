@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color : #44676d;
+}
+
+.text{
+    color: #fff;
+    font-size: 5vw;
+}
+
+.text .z-layer:first-child{
+    color: #f44336;
+}
+.text .z-layer{
+    color: #b73229;
+}
+
+.emoji{
+    margin: 3rem 0;
+}
+
+img{
+    width: 30rem;
+    height: 25rem;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, .8);
+    object-fit: cover;
+
+}

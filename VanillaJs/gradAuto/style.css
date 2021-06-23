@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu';
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+body{
+
+    overflow-x: hidden;
+}
+
+.container{
+    position: relative;
+}
+
+.container .box{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    max-width: 80%;
+    width: 50rem;
+    box-shadow: 2.5rem 2.5rem 8rem rgba(0,0,0,.8);
+    height: 50rem;
+    background-position: center center;
+    background-size: 100% 100%;
+    object-fit: cover;
+}

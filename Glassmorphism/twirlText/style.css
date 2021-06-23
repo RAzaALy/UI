@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "Patu";
+  src: url("./font/PatuaOne-Regular.ttf");
+}
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Patu", sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #111;
+  cursor: pointer;
+}
+.text {
+  position: relative;
+  transform:rotate(calc(-0.1deg * 100));
+}
+.text .txtBox {
+  position: absolute;
+  transform: translate(-50%,-50%);
+  font-size: 10vw;
+  color: #fff;
+  display: felx;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  user-select: none;
+  text-align: center;
+  text-shadow: 0 5px 1.5rem rgba(0, 0, 0, 0.1);
+}
+.text .txtBox span {
+  color: red;
+  /* margin: 0 .5rem; */
+}

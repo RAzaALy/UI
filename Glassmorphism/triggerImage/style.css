@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 10rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+section:nth-child(even) {
+  justify-content: flex-end;
+}
+section .imgBx {
+  position: relative;
+  width: 60rem;
+  height: 40rem;
+  overflow: hidden;
+}
+
+
+section .imgBx::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 1;
+    transition: 0.5s;
+    transform-origin: right;
+    transform: scaleX(1);
+}
+section:nth-child(even) .imgBx:before{
+    transform-origin: left;
+}
+
+section .imgBx.active::before{
+    transform: scaleX(0);
+}  
+
+/* section .imgBx:hover::before{
+    transform: scaleX(0);
+} */
+
+section .imgBx img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

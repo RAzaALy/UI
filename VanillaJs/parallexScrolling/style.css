@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu';
+}
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    background-color : #234256;
+
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+}
+
+.bg{
+    width: 100%;
+    height: 100%;
+    background: url('bio.gif');
+    background-position: center center;
+    background-size: 100% 100%;
+    object-fit: contain;
+    /* background-attachment: fixed; */
+}
+
+section{
+
+    color: #fff;
+    padding: 8rem;
+    width: 100%;
+    margin: auto;
+}
+
+p{
+    margin: 3rem auto;
+}

@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ubuntu';
+}
+
+body{
+    overflow: hidden;
+}
+
+section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('bg.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+section .glass{
+    position: absolute;
+    transform: translate(-50% , -50%);
+    pointer-events: none;
+    width: 25rem;
+    height: 25rem;
+    box-shadow: 0 2.5rem 5rem rgba(0,0,0, .2);
+    background: transparent;
+    backdrop-filter: blur(.4rem);
+    border-radius: 50%;
+    transition:  .2s;
+
+}
+
+section h2{
+    position: absolute;
+    top: 20%;
+    font-size: 5em;
+    color: #fff;
+    pointer-events: none;
+    text-shadow:  10rem 10rem 10rem 3rem rgba(0,0,0, .5);
+
+}

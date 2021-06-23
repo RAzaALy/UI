@@ -1,0 +1,109 @@
+@font-face {
+    font-family: Poppins;
+    src: url('Poppins/Poppins-Light.ttf');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    overflow: hidden;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg , #111,#222,#111);
+}
+
+section::before{
+    content: '';
+    position: absolute;
+    width: 30vw;
+    height: 30vw;
+    border: 5vw solid #ff1062;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1vw #222,
+                0 0 0 1.3vw #fff;
+
+
+}
+
+section i{
+
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 1rem #fff,
+                0 0 2rem #fff,
+                0 0 4rem #fff,
+                0 0 8rem #fff;
+    animation: animate 1s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
+h2{
+    position: absolute;
+    font-size: 9vw;
+    color: #fff;
+    text-align: center;
+    line-height: 2em;
+    z-index: 10;
+    transform: skewY(-7deg);
+    text-shadow: .1rem .1rem 0 #ccc,
+                .2rem .2rem 0 #ccc,
+                .3rem .3rem 0 #ccc,
+                .4rem .4rem 0 #ccc,
+                .5rem .5rem 0 #ccc,
+                 1rem 1rem 0 rgba(0,0,0,.2);
+    animation: floating 3s ease-in-out infinite;
+}
+
+h2 span{
+    font-weight: 700;
+    font-size: 3em;
+    text-shadow: .1rem .1rem 0 #ccc,
+    .2rem .2rem 0 #ccc,
+    .3rem .3rem 0 #ccc,
+    .4rem .4rem 0 #ccc,
+    .5rem .5rem 0 #ccc,
+    .6rem .6rem 0 #ccc,
+    .7rem .7rem 0 #ccc,
+    .8rem .8rem 0 #ccc,
+    .9rem .9rem 0 #ccc,
+     2rem 2rem 0 rgba(0,0,0,.2);
+
+}
+@keyframes floating{
+    0%,100%{
+        transform: skewY(-7deg) translate(0,-2rem);
+    }
+    50%{
+        transform: skewY(-7deg) translate(0,2rem);
+    }
+}

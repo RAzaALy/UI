@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fontawesome-free-5.15.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Shoe Card Effect</title>
+  </head>
+  <body>
+    <div class="container">
+      <ul class="thumb">
+        <li onmouseover="changeImageSrc('./img/shoe1.png')">
+          <img src="./img/shoe1.png" alt="img" />
+        </li>
+        <li onmouseover="changeImageSrc('./img/shoe3.png')">
+          <img src="./img/shoe3.png" alt="img" />
+        </li>
+        <li onmouseover="changeImageSrc('./img/shoe.png')">
+          <img src="./img/shoe.png" alt="img" />
+        </li>
+      </ul>
+      <div class="imgBox">
+        <h2>Nike Men Shoes</h2>
+        <img src="./img/shoe1.png" alt="shoe" class="shoses" />
+        <ul class="size">
+          <span>Size</span>
+          <li>7</li>
+          <li>8</li>
+          <li>9</li>
+          <li>10</li>
+        </ul>
+        <a href="#" class="btn"> Add to Cart</a>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

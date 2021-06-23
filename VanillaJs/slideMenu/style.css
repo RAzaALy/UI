@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'ubuntu';
+    font-weight: 600;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    display: flex;
+    justify-content: center
+    ;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+    background: #222221;
+}
+
+nav{
+    position: relative;;
+    display: flex;
+}
+
+nav a{
+    position: relative;
+    margin: 0 2rem;
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav #marker{
+    position: absolute;
+    left: 0;
+    width: 0%;
+    height: .4rem;
+    bottom: -.8rem;
+    border-radius: .4rem;
+    background-color: yellowgreen;
+    transition: .5s;
+}

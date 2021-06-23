@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'ubuntu';
+  user-select: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  background-color: #1a4b6a;
+}
+
+
+#toggle {
+
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  width: 4rem;
+  height: 4rem;
+  background-color: #71e6ef;
+  cursor: pointer;
+  border-radius: .3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#toggle:before {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 0.2rem;
+  background-color: #fff;
+  transform: translateY(-0.5rem);
+  transition: .2s;
+}
+#toggle:after {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 0.2rem;
+  background-color: #fff;
+  transform: translateY(.5rem);
+  transition: .2s;
+}
+
+#toggle.active::before{
+    transform: translateY(0rem) rotate(45deg);
+
+}
+#toggle.active::after{
+    transform: translateY(0rem) rotate(-45deg);
+
+}
+
+#slideBar{
+    position: fixed;
+    top: 0;
+    left: -30rem;
+    width: 30rem;
+    height: 100vh;
+    background-color : #25668f;;
+    transition: .5s;
+}
+
+#toggle.active ~ #slideBar{
+    left: 0;
+}
+
+#slideBar ul{
+    
+    position: relative;
+    margin-top: 5rem;
+}
+
+#slideBar ul li {
+    cursor: pointer;
+    
+   list-style: none;
+   display: inline-block;
+   width: 100%;
+   padding: 1rem 4rem;
+}
+
+#slideBar ul li:hover{
+    background-color: #2fb9eb;
+
+}
+
+
+#slideBar ul li a{
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.8rem;
+    letter-spacing: .2rem;
+}

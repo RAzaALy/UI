@@ -1,0 +1,133 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  overflow: hidden;
+  cursor: pointer;
+}
+section {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  /* background: linear-gradient(to bottom, #ff4f8b, #dff1ff); */
+}
+section::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  background: #8fd3f4;
+  z-index: 10;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1rem);
+}
+section .color {
+  position: absolute;
+  filter: blur(15rem);
+}
+section .color:nth-child(1) {
+  top: -35rem;
+  background-color: #4facfe;
+  width: 60rem;
+  height: 60rem;
+}
+section .color:nth-child(2) {
+  bottom: -15rem;
+  left: 0rem;
+  background-color:#37ecba;
+  width: 50rem;
+  height: 50rem;
+}
+section .color:nth-child(3) {
+  bottom: -5rem;
+  right: 0;
+  background-color: #00d3ff;
+  width: 30rem;
+  height: 30rem;
+}
+ul {
+  position: absolute;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul li {
+  position: relative;
+  list-style: none;
+  margin: 1rem;
+}
+ul li a {
+  text-decoration: none;
+  position: relative;
+  top: 0;
+  width: 8rem;
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 3.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  z-index: 1;
+  box-shadow: 0 0.5rem 4.5rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: top 0.5s, z-index 0s, transform 0.5s;
+  transition-delay: 0.5s, 0.5s, 0s;
+}
+ul li a:hover {
+  transition-delay: 0s, 0.5s, 0.5s;
+  top: -5rem;
+  transform: translateY(5rem);
+  z-index: 11;
+}
+ul li a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5rem;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  transform: skewX(45deg) translateX(15rem);
+  transition: 0.5s;
+}
+ul li a:hover:before {
+  transform: skewX(45deg) translateX(-15rem);
+}
+.fab {
+  transition: all 0.3s;
+}
+.fa-facebook:hover {
+  color: #3b5998;
+}
+.fa-twitter:hover {
+  color: #2196f3;
+}
+.fa-whatsapp:hover {
+  color: #4fce5d;
+}
+.fa-instagram:hover {
+  color: #fd1d1d;
+}
+.fa-linkedin:hover {
+  color: #0e76a8;
+}

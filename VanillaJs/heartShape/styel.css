@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ body{
+     overflow: hidden;
+     background-color: #000;
+     height: 100vh;
+
+ }
+
+
+ .fas{
+     position: absolute;
+     color: rebeccapurple;
+     pointer-events: none;
+     transform: translate(-50% , -50%);
+     background-size: cover;
+     animation:  animate 1.9s linear infinite;
+ }
+
+ @keyframes animate {
+     0%{
+         transform: translate(-50%, -50%);
+         opacity: 1;
+         filter: hue-rotate(0deg);
+     }
+     
+     100%{
+         transform: translate(-50%, -1000%);
+         opacity: 0;
+         filter: hue-rotate(720deg);
+
+     }
+     
+ }
