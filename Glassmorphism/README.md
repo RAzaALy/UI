@@ -37,5 +37,5 @@
 <img src="https://imguploader.net/if/AGOpnus0OC4G.png" alt="img" /></br>
 ## 19: User Card
 <img src="https://imguploader.net/if/x1SK54RO1Ex5.png" alt="img" /></br>
-## 19: User Card
-<img src="https://imguploader.net/if/x1SK54RO1Ex5.png" alt="img" /></br>
+## 20: Zindex Effect
+<img src="https://imguploader.net/if/CN62yDVRREam.png" alt="img" /></br>
