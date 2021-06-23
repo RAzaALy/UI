@@ -1,7 +1,7 @@
 # GlassMorphism UI Components
 ## 1: Animation Text Effect
 <img src="https://imguploader.net/if/6m4IIRNyjkIg.png" alt="img" />
-<br>
+<br />
 ## 2: Animation Flag
 <img src="https://imguploader.net/if/VD2SzSV3vjue.png" alt="img" />
 ## 3: Animated Heart Background
